@@ -1,0 +1,81 @@
+*{
+    transition: all 100ms ease;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 252, 223);
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 15%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: grey;
+    box-shadow: 1px 1px 10px 1px black;
+
+    h1{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #logo{
+        position: fixed;
+        height: 80px;
+    }
+}
+
+main{
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    .container{
+        border: 1px solid black;
+        width: 280px;
+        height: 280px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+    .square{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        background-color: rgb(255, 254, 235);
+    }
+
+    .square:hover{
+        background-color: antiquewhite;
+    }
+
+    #btnRestart{
+        padding: 15px 55px;
+        border-radius: 10px;
+        border: none;
+        font-size: x-large;
+        background-color: rgb(255, 255, 141);
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    }
+    #btnRestart:hover{
+        background-color: rgb(255, 255, 0);
+        cursor: pointer;
+        box-shadow: 0 0 10px 1px black;
+    }
+    #btnRestart:active{
+        background-color: rgb(255, 230, 0);
+        box-shadow: none;
+        padding: 11px 51px;
+    }
+}
